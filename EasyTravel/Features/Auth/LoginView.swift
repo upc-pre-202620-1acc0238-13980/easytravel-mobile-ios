@@ -62,13 +62,16 @@ struct LoginView: View {
                     .padding(.horizontal)
                 
             }
+            
         }
+
         .navigationBarBackButtonHidden()
         .navigationDestination(isPresented: $showMainView, destination: {
             MainView()
         })
         .frame(maxHeight: .infinity)
         .tint(.orange)
+
     }
 }
 
@@ -78,4 +81,6 @@ struct LoginView: View {
         LoginView()
 
     }
+    .colorScheme(.dark)
+
 }
